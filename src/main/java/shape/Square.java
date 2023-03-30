@@ -6,6 +6,9 @@ public class Square extends Shape {
         super(name);
         this.side = side;
     }
+    public String toString(){
+        return  super.toString() + side;
+    }
     public double getPerimeter(){
         return 4 * side;
     }

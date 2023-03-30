@@ -6,25 +6,19 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
 
-public class App
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
 
-    List <Shape> Shapes = new LinkedList<>();
+    Aplic aplic = new Aplic();
 
-    Shapes.add( new Rectangle("rectangle1", 3, 5));
-    Shapes.add( new Square("square1", 4));
-    Shapes.add( new Triangle("triangle1", 4, 6));
-    Shapes.add( new Cycle("cycle1", 7));
+    aplic.ShapeAddRectangle("rectangle", 3, 5);
+    aplic.ShapeAddRectangle("rectangle", 3, 4);
+    aplic.ShapeAddSquare("square", 4);
+    aplic.ShapeAddTriangle("triangle", 6);
+    aplic.ShapeAddTriangle("triangle", 3);
+    aplic.ShapeAddCircle("circle", 7);
 
-    for (Shape nextShape : Shapes) {
-        System.out.println(" ");
-        System.out.println( "Area: " + nextShape.getArea() + " and Perimeter: " + nextShape.getPerimeter());
-        System.out.println(" ");
-    }
-
-
-
+    aplic.ShapesInfo();
+    aplic.SumCalculation();
     }
 }

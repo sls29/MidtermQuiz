@@ -10,6 +10,9 @@ public class Rectangle extends Shape{
         this.length = length;
         this.width = width;
     }
+    public String toString(){
+        return super.toString() + length + " " + width;
+    }
 
     public double getPerimeter(){
         return 2 * length + 2 * width;
